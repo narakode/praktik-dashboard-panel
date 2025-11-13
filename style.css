@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: navy;
+}
+
+aside .logo {
+    padding: 20px;
+    text-align: center;
+} 
+
+aside .logo a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+aside .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+} 
+
+aside .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+}
+
+aside .menu a.active, aside .menu a:hover {
+    background-color: dodgerblue;
+}
+
+.konten {
+    background-color: whitesmoke;
+    min-height: 100vh;
+}
+
+.konten nav {
+    background-color: white;
+    padding: 13px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.konten nav button {
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.konten nav button:hover {
+    background-color: lightgray;
+}
+
+.konten main {
+    padding: 0px 20px;
+}
+
+@media (min-width: 768px) {
+    aside {    
+        left: 0;
+    }
+
+    .konten {
+        margin-left: 300px;
+    }
+
+    .konten main {
+        padding: 20px 40px;
+    }
+}
